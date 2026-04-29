@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!241 &24100000
+AudioMixerController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: MainAudioMixer
+  m_OutputGroup: {fileID: 0}
+  m_MasterGroup: {fileID: 24300000}
+  m_Snapshots:
+  - {fileID: 24500004}
+  m_StartSnapshot: {fileID: 24500004}
+  m_SuspendThreshold: -40
+  m_EnableSuspend: 1
+  m_UpdateMode: 0
+  m_ExposedParameters:
+  - guid: 5355c24342d990849872320503b703ed
+    name: SKjUqTL
+  m_AudioMixerGroupViews:
+  - guids:
+    - 11b6d7f1134dac3458a81452ea20386d
+    name: View
+  m_CurrentViewIndex: 0
+  m_TargetSnapshot: {fileID: 24500004}
+--- !u!243 &24300000
+AudioMixerGroupController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Master
+  m_AudioMixer: {fileID: 24100000}
+  m_GroupID: 11b6d7f1134dac3458a81452ea20386d
+  m_Children: []
+  m_Volume: 5355c24342d990849872320503b703ed
+  m_Pitch: 6cf0f410bf6e87d4d826b52d20a982fb
+  m_Send: 824142b39e4bf764f9e906e51a6824c9
+  m_Effects:
+  - {fileID: 24400002}
+  m_UserColorIndex: 0
+  m_Mute: 0
+  m_Solo: 0
+  m_BypassEffects: 0
+--- !u!244 &24400002
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_EffectID: 41fb390f0cf92a14290152efdb55853e
+  m_EffectName: Attenuation
+  m_MixLevel: 9e89eb98c3325354d94f2363b167e4fe
+  m_Parameters: []
+  m_SendTarget: {fileID: 0}
+  m_EnableWetMix: 0
+  m_Bypass: 0
+--- !u!245 &24500004
+AudioMixerSnapshotController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Snapshot
+  m_AudioMixer: {fileID: 24100000}
+  m_SnapshotID: fc17314a6ed1e5c4dab285fe4279e0b2
+  m_FloatValues:
+    6cf0f410bf6e87d4d826b52d20a982fb: 1
+    5355c24342d990849872320503b703ed: -40.000004
+    824142b39e4bf764f9e906e51a6824c9: -80
+  m_TransitionOverrides: {}
